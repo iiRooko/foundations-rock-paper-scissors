@@ -1,5 +1,6 @@
 /*console.log("Hello World!")*/
 
+/* Code for computer choice to return rock,paper,scissors */
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3);
 
@@ -14,4 +15,5 @@ function getComputerChoice() {
 }
 /*console.log(getComputerChoice())*/
 
+/* Code for human choice prompt */
 
