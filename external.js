@@ -1,4 +1,4 @@
-console.log("Hello World")
+/*console.log("Hello World!")*/
 
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3);
@@ -12,5 +12,6 @@ function getComputerChoice() {
             return 'scissors';
     }
 }
+/*console.log(getComputerChoice())*/
 
-console.log(getComputerChoice())
+
