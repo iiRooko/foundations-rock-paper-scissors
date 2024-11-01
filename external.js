@@ -16,7 +16,7 @@ function getComputerChoice() {
 /*console.log(getComputerChoice())*/
 
 // Code for human choice prompt //
-function getHumanChoice(prompt) {
+function getHumanChoice() {
     let getHumanChoice = prompt("What do you choose?");
 
     if (getHumanChoice.toLowerCase() === "rock") {
@@ -31,3 +31,10 @@ function getHumanChoice(prompt) {
         alert("You chose scissors");
     }
 }
+// console.log(getHumanChoice()) //
+
+// Code for players scores //
+let humanScore = 0;
+let computerScore = 0;
+// console.log(humanScore) //
+// console.log(computerScore) //
