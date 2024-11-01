@@ -1,6 +1,6 @@
 /*console.log("Hello World!")*/
 
-/* Code for computer choice to return rock,paper,scissors */
+// Code for computer choice to return rock,paper,scissors //
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3);
 
@@ -15,5 +15,19 @@ function getComputerChoice() {
 }
 /*console.log(getComputerChoice())*/
 
-/* Code for human choice prompt */
+// Code for human choice prompt //
+function getHumanChoice(prompt) {
+    let getHumanChoice = prompt("What do you choose?");
 
+    if (getHumanChoice.toLowerCase() === "rock") {
+        alert("You chose rock!");
+    }
+    
+    else if (getHumanChoice.toLowerCase() === "paper") {
+        alert("You chose paper");
+    }
+
+    else if (getHumanChoice.toLowerCase() === "scissors") {
+        alert("You chose scissors");
+    }
+}
