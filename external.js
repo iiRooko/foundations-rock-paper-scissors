@@ -41,10 +41,22 @@ let computerScore = 0;
 
 // Code for round based scoring //
 function playRound(humanChoice, computerChoice) {
-    
+    if (humanChoice > computerChoice) {
+        humanScore++;
+        console.log("You Win!");
+    }
+    else if (humanChoice < computerChoice) {
+        computerScore++;
+        console.log("You Lose!");
+    }
+    else {
+        console.log("It's a tie!")
+    }
 }
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+console.log()
