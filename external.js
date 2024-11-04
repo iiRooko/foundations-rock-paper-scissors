@@ -41,25 +41,31 @@ let computerScore = 0;
 // console.log(humanScore) //
 // console.log(computerScore) //
 
-// Code for round based scoring //
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice > computerChoice) {
-        humanScore++;
-        console.log("You Win!");
+
+
+
+function playGame() {
+    // Code for round based scoring //
+    function playRound(humanChoice, computerChoice) {
+        if (humanChoice > computerChoice) {
+            humanScore++;
+            console.log("You Win!");
+        }
+        else if (humanChoice < computerChoice) {
+            computerScore++;
+            console.log("You Lose!");
+        }
+        else {
+            console.log("It's a tie!")
+        }
+        return humanScore || computerScore;
+        
     }
-    else if (humanChoice < computerChoice) {
-        computerScore++;
-        console.log("You Lose!");
-    }
-    else {
-        console.log("It's a tie!")
-    }
-    return humanScore || computerScore;
-}
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+}
 
-console.log()
+playGame();
