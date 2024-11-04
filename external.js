@@ -30,7 +30,9 @@ function getHumanChoice() {
     else if (getHumanChoice.toLowerCase() === "scissors") {
         alert("You chose scissors");
     }
+    return getHumanChoice;
 }
+
 // console.log(getHumanChoice()) //
 
 // Code for players scores //
