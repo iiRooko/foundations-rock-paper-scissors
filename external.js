@@ -54,6 +54,7 @@ function playRound(humanChoice, computerChoice) {
     else {
         console.log("It's a tie!")
     }
+    return humanScore || computerScore;
 }
 
 const humanSelection = getHumanChoice();
