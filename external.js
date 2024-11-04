@@ -67,8 +67,8 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 }
 
-const gameOverComputer = (computerScore > 5)
-const gameOverHuman = (humanScore > 5)
+const gameOverComputer = (computerScore >= 5)
+const gameOverHuman = (humanScore >= 5)
 
 function newGameOver(gameOverComputer, gameOverHuman) {
     if (gameOverComputer === true) {
