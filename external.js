@@ -67,16 +67,16 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 }
 
-playGame();
-
 const gameOverComputer = (computerScore > 5)
 const gameOverHuman = (humanScore > 5)
 
 function newGameOver(gameOverComputer, gameOverHuman) {
-    if (gameOverComputer = true) {
+    if (gameOverComputer === true) {
         console.log("Game Over! You lost!");
     }
-    else if (gameOverHuman = true) {
+    else if (gameOverHuman === true) {
         console.log("Game Over! You Won!");
     }
 }
+
+playGame();
