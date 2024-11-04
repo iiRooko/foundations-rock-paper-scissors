@@ -59,7 +59,6 @@ function playGame() {
             console.log("It's a tie!")
         }
         return humanScore || computerScore;
-        
     }
 
 const humanSelection = getHumanChoice();
@@ -69,3 +68,15 @@ playRound(humanSelection, computerSelection);
 }
 
 playGame();
+
+const gameOverComputer = (computerScore > 5)
+const gameOverHuman = (humanScore > 5)
+
+function newGameOver(gameOverComputer, gameOverHuman) {
+    if (gameOverComputer = true) {
+        console.log("Game Over! You lost!");
+    }
+    else if (gameOverHuman = true) {
+        console.log("Game Over! You Won!");
+    }
+}
