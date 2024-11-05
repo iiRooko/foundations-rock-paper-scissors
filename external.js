@@ -61,21 +61,25 @@ function playGame() {
         return humanScore || computerScore;
     }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
 playRound(humanSelection, computerSelection);
 }
 
-const gameOverComputer = (computerScore >= 5)
-const gameOverHuman = (humanScore >= 5)
-
-function newGameOver(gameOverComputer, gameOverHuman) {
-    if (gameOverComputer === true) {
-        console.log("Game Over! You lost!");
+function checkGameOver() {
+    if (computerScore >= 5) {
+        console.log("Game Over! You Lost!");
+        return true;
     }
-    else if (gameOverHuman === true) {
+    else if (humanScore >= 5) {
         console.log("Game Over! You Won!");
+        return true;
+    }
+    return false;
+}
+
+function playGame() {
+    while (!checkGameOver()) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
     }
 }
 
