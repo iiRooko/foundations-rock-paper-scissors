@@ -60,8 +60,6 @@ function playGame() {
         }
         return humanScore || computerScore;
     }
-
-playRound(humanSelection, computerSelection);
 }
 
 function checkGameOver() {
@@ -80,6 +78,10 @@ function playGame() {
     while (!checkGameOver()) {
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
+
+        console.log(`Computer chose ${computerSelection}`);
+
+        console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`);
     }
 }
 
