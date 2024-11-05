@@ -30,7 +30,7 @@ function getHumanChoice() {
     else if (getHumanChoice.toLowerCase() === "scissors") {
         alert("You chose scissors");
     }
-    return getHumanChoice;
+    return getHumanChoice.toLowerCase();
 }
 
 // console.log(getHumanChoice()) //
@@ -42,23 +42,18 @@ let computerScore = 0;
 // console.log(computerScore) //
 
 
-
-
-function playGame() {
-    // Code for round based scoring //
-    function playRound(humanChoice, computerChoice) {
-        if (humanChoice > computerChoice) {
-            humanScore++;
-            console.log("You Win!");
-        }
-        else if (humanChoice < computerChoice) {
-            computerScore++;
-            console.log("You Lose!");
-        }
-        else {
-            console.log("It's a tie!")
-        }
-        return humanScore || computerScore;
+// Code for round based scoring //
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice > computerChoice) {
+        humanScore++;
+        console.log("You Win!");
+    }
+    else if (humanChoice < computerChoice) {
+        computerScore++;
+        console.log("You Lose!");
+    }
+    else {
+        console.log("It's a tie!")
     }
 }
 
@@ -80,6 +75,7 @@ function playGame() {
         const computerSelection = getComputerChoice();
 
         console.log(`Computer chose ${computerSelection}`);
+        console.log(`You Chose ${humanSelection}`);
 
         console.log(`Your Score: ${humanScore} | Computer Score: ${computerScore}`);
     }
